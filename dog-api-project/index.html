@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog API</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Danfo&family=Open+Sans&family=Lilita+One&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <div id="app" class="form-container">
+          <h1 class="title">Dog API <span class="paw-symbol">🐾</span></h1>
+          <form id="dog-form">
+            <div class="form-group">
+              <label for="breed-select">Selecione a raça:</label>
+              <div class="select-container">
+                <select id="breed-select" class="form-control"></select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="dog-name">Nome do cachorro:</label>
+              <input
+                type="text"
+                id="dog-name"
+                class="form-control"
+                placeholder="Digite o nome do cachorro"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="font-color">Selecione a cor da fonte:</label>
+              <div class="select-container">
+                <select id="font-color" class="form-control">
+                  <option value="black">Preto</option>
+                  <option value="red">Vermelho</option>
+                  <option value="blue">Azul</option>
+                  <option value="green">Verde</option>
+                  <option value="purple">Roxo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="font-family">Selecione a fonte:</label>
+              <div class="select-container">
+                <select id="font-family" class="form-control">
+                  <option value="Roboto">Roboto</option>
+                  <option value="Lobster">Lobster</option>
+                  <option value="Danfo">Danfo</option>
+                  <option value="Lilita One">Lilita One</option>
+                  <option value="Indie Flower">Indie Flower</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Div de preview -->
+            <div id="name-preview-div" class="form-group" style="margin-bottom: -5%; display: none">
+                <label for="name-preview">Prévia</label>
+            <div
+              id="name-preview"
+              class="dog-name-display"
+              style="display: none"
+            ></div>
+            </div>
+
+            <button type="submit" id="btn" class="btn">Salvar</button>
+
+          </form>
+
+          <div
+            id="success-message"
+            class="success-message"
+            style="display: none"
+          >
+            Informações salvas com sucesso!
+          </div>
+        </div>
+
+        <div id="image-section" class="image-container">
+          <img id="dog-image" alt="Dog Image" class="dog-image" />
+          <div id="dog-name-display" class="dog-name-display"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.outer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  max-width: 1600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 90%;
+}
+
+.form-container {
+  flex: 1;
+  padding-left: 55px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Adicionado para posicionamento absoluto da div de preview */
+}
+
+.centered {
+  flex: 1;
+  padding-left: 55px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Adicionado para posicionamento absoluto da div de preview */
+}
+
+.image-container {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.dog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dog-name-display {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  /* background: rgba(255, 255, 255, 0.7); */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+/* Estilos para a div de preview */
+#name-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  left: 0px;
+  width: 110%;
+  max-width: 267px;
+  max-height: 20px;
+  overflow: hidden;
+}
+
+.title {
+  font-family: "Lilita One", cursive;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.paw-symbol {
+  font-size: 1.5em;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.select-container {
+  position: relative;
+  width: 118%;
+  max-width: 118%;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  padding-right: 35px;
+}
+
+#dog-name {
+  max-width: 240px;
+}
+
+.select-container::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333;
+}
+
+.form-control:focus {
+  border-color: #635994;
+}
+
+.btn {
+  background-color: #635994;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 118%;
+  max-width: 118%;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #635994ce;
+}
+
+.btnMargin {
+  margin-bottom: 20%;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 266px;
+  bottom: 0;
+  margin-bottom: 40px; 
+  position: absolute;
+  
+}
+
+.option {
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #eee;
+}
+
+.option.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
