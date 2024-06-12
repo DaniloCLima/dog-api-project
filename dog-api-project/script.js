@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const dogNameInput = document.getElementById('dog-name');
     const fontColorSelect = document.getElementById('font-color');
     const fontFamilySelect = document.getElementById('font-family');
-    const dogDisplay = document.getElementById('image-section'); // Modificado para o contêiner de imagem
+    const dogDisplay = document.getElementById('image-section');
     const dogImage = document.getElementById('dog-image');
     const dogNameDisplay = document.getElementById('dog-name-display');
     const successMessage = document.getElementById('success-message');
-    const namePreview = document.getElementById('name-preview'); // Nova div de preview
-    const namePreviewDiv = document.getElementById('name-preview-div'); // Nova div de preview
-    const formContainer = document.getElementById('app'); // Nova div de preview
-    const btn = document.getElementById('btn'); // Nova div de preview
+    const namePreview = document.getElementById('name-preview');
+    const namePreviewDiv = document.getElementById('name-preview-div');
+    const formContainer = document.getElementById('app');
+    const btn = document.getElementById('btn');
 
     // Função para carregar raças da API
     async function loadBreeds() {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dogNameDisplay.style.color = data.color;
         dogNameDisplay.style.fontFamily = data.font;
         dogImage.src = data.image;
-        dogDisplay.style.display = 'flex'; // Modificado para mostrar a div amarela
+        dogDisplay.style.display = 'flex';
         btn.classList.remove('btnMargin');
         formContainer.classList.remove('centered');
     }
@@ -77,8 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedData) {
         updateDogDisplay(savedData);
         updatePreview(savedData.name, savedData.color, savedData.font); // Atualiza a preview com os dados salvos
-
-        // Remove a classe 'centered' do form-container quando há dados salvos
         btn.classList.remove('btnMargin');
         formContainer.classList.remove('centered');
     } else {
