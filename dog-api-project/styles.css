@@ -38,7 +38,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative; /* Adicionado para posicionamento absoluto da div de preview */
+  position: relative;
 }
 
 .centered {
@@ -50,7 +50,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative; /* Adicionado para posicionamento absoluto da div de preview */
+  position: relative;
 }
 
 .image-container {
@@ -74,14 +74,12 @@ body {
   position: absolute;
   bottom: 10px;
   right: 15px;
-  /* background: rgba(255, 255, 255, 0.7); */
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 80px;
   font-weight: bold;
 }
 
-/* Estilos para a div de preview */
 #name-preview {
   display: flex;
   justify-content: center;
