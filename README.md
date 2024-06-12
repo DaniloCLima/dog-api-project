@@ -23,6 +23,6 @@ Para este projeto, utilizo a [Dog API](https://dog.ceo/dog-api/) para buscar inf
 ## Como Utilizar
 1. Clone este repositório em sua máquina local.
 2. Abra o arquivo `index.html` em seu navegador.
-3. Selecione a raça de cachorro desejada, insira o nome do cachorro, escolha a cor e a fonte da fonte e clique em salvar.
+3. Selecione a raça de cachorro desejada, insira o nome do cachorro (há validações caso isso não ocorra), escolha a cor e a fonte da fonte e clique em salvar.
 4. Visualize a mensagem de sucesso e verifique que as informações foram armazenadas no local storage.
 5. Mesmo após recarregar a página, as informações salvas permanecerão visíveis.
